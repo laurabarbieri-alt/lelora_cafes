@@ -3,3 +3,193 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222222;
+    background-color: #E2DACB;
+    padding-top: 64px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    padding: 0 40px;
+    background-color: #1F3023;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+    color: #C5A059;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 64px;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 0 16px;
+    color: #C5A059;
+    line-height: 64px;
+}
+
+.menu a:hover {
+    background-color: #f2a900;
+    color: #1F3023;
+    font-weight: bold;
+}
+
+/* Destaque (Banner) */
+
+.hero {
+    padding: 96px 20px;
+    background-color: #408a2d;
+    background-image: linear-gradient(rgba(31, 48, 35, 1), rgba(31, 48, 35, 1)), url("/img/banner-coworking.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #C5A059;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 16px;
+    font-size: 2.4rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 24px auto;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #E2DACB;
+    border-radius: 6px;
+    background-color: #E2DACB;
+    color: #1F3023;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #e8b63f;
+    border: 2px solid #e8b63f;
+}
+
+/* Seções e cards */
+
+.secao {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px 40px 20px;
+}
+
+.secao h2 {
+    margin-bottom: 32px;
+    color: #1F3023;
+    text-align: center;
+}
+
+.card {
+    float: left;
+    width: 32%;
+    margin: 0 0.66%;
+    padding: 24px;
+    border: 2px solid #cccccc;
+    background-color: #C5A059;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #1F3023;
+}
+
+.limpa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Planos */
+
+.plano {
+    position: relative;
+}
+
+.preco {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.plano ul {
+    margin-left: 20px;
+}
+
+.destaque {
+    border-color: #E2DACB;
+}
+
+.selo {
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    background-color: #E2DACB;
+    color: #1F3023;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Rodapé */
+
+#contato {
+    margin-top: 40px;
+    padding: 32px 20px;
+    background-color: #1F3023;
+    color: #C5A059;
+    text-align: center;
+}
